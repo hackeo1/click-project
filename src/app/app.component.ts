@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import Timer = NodeJS.Timer;
 import {Subject} from 'rxjs/Subject';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/delay';
@@ -18,7 +17,7 @@ export class AppComponent {
   // Without Observables
   timeoutClickCounter: number;
   nukeFunctionCallBack: () => void;
-  timeoutCleanUp: Timer;
+  timeoutCleanUp: any;
 
   // With Observables
   observableClickCounter: number;
